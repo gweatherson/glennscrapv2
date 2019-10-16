@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^glennscrap/(.*)$ /$1 [R=301,L]
