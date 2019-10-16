@@ -1,0 +1,32 @@
+.post {
+  position: relative;
+  z-index: 20;
+
+	&__list-item {
+		padding: 1rem 0;
+    font-size: 1.6rem;
+
+    @include media-query($mobile) {
+      padding: 1.5rem 0;
+      font-size: 1.4rem;
+    }
+	}
+
+  &__link {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+
+    @include media-query($mobile) {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+  }
+
+	&__meta {
+		font-size: 1.2rem;
+	}
+
+}

@@ -1,0 +1,9 @@
+name: glennscrap
+email: gweatherson@gmail.com
+title: glennscrap
+description: A place filled with photos of bikes, dogs, friends, and other nonsense.
+
+
+markdown: kramdown
+highlighter: rouge
+exclude: ["node_modules", "gulpfile.js", "package.json"]

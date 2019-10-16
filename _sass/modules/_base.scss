@@ -1,0 +1,60 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: 1.6rem;
+  color: $text-color;
+  background-color: $background-color;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  display: block;
+}
+
+figure {
+  margin-bottom: 20rem;
+
+  @include media-query($mobile) {
+     margin-bottom: 10rem;
+  }
+}
+
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+  margin-top: 1rem;
+
+  @include media-query($mobile) {
+
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
