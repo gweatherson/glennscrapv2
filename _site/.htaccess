@@ -1,18 +1,4 @@
-# Bluehost.com
-# .htaccess main domain to subdirectory redirect
-# Do not change this line.
-RewriteEngine on
-# Change example.com to be your main domain.
-RewriteCond %{HTTP_HOST} ^(www.)?glennscrap.com$
-# Change 'subdirectory' to be the directory you will use for your main domain.
-RewriteCond %{REQUEST_URI} !^/glennscrap/_site/
-# Don't change the following two lines.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-# Change 'subdirectory' to be the directory you will use for your main domain.
-RewriteRule ^(.*)$ /glennscrap/$1
-# Change example.com to be your main domain again.
-# Change 'subdirectory' to be the directory you will use for your main domain
-# followed by / then the main file for your site, index.php, index.html, etc.
-RewriteCond %{HTTP_HOST} ^(www.)?glennscrap.com$
-RewriteRule ^(/)?$ glennscrap/_site/index.html [L]
+RewriteEngine On
+RewriteCond %{HTTP_HOST} glennscrap\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://glennscrap.com/$1 [R,L]

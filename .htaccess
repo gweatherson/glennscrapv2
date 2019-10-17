@@ -1,8 +1,4 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www.)?glennscrap.com$
-RewriteCond %{REQUEST_URI} !^/glennscrap/_site/
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /glennscrap/$1
-RewriteCond %{HTTP_HOST} ^(www.)?glennscrap.com$
-RewriteRule ^(/)?$ glennscrap/_site/index.html [L]
+RewriteCond %{HTTP_HOST} glennscrap\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://glennscrap.com/$1 [R,L]
