@@ -7,9 +7,12 @@ body {
   font-size: 1.6rem;
   color: $text-color;
   background-color: $background-color;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  height: 100vh;
+  padding: 4rem;
+
+  @include media-query($mobile) {
+    padding: 2rem;
+  }
 }
 
 h1 {

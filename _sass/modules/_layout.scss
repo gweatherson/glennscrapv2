@@ -1,49 +1,9 @@
 .site {
-  padding: 4rem;
   height: 100%;
-
-  @include media-query($mobile) {
-    padding: 2rem;
-  }
-}
-
-.header {
-  margin-bottom: 4rem;
-
-  @include media-query($mobile) {
-    margin-bottom: 2rem;
-  }
-
-}
-
-.footer {
-  position: fixed;
-  bottom: 2rem;
-  right: 4rem;
-  font-size: 1.2rem;
-  background-color: $background-color;
-  color: #67917A;
-  z-index: 10;
-
-  a {
-    color: #67917A;
-    text-decoration: none;
-
-    &:visited {
-      color: #67917A;
-    }
-
-    &:hover {
-      color: #67917A;
-      text-decoration: underline;
-    }
-
-  }
-
-}
-
-@include media-query($mobile) {
-  .footer {
-    right: 2rem;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 1fr 40px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
 }

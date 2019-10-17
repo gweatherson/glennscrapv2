@@ -3,7 +3,7 @@ email: gweatherson@gmail.com
 title: glennscrap
 description: A place filled with photos of bikes, dogs, friends, and other nonsense.
 baseurl: ""
-url: ""
+url: "https://glennscrap.com"
 permalink: pretty
 markdown: kramdown
 highlighter: rouge

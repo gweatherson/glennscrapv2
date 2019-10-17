@@ -1,0 +1,17 @@
+.footer {
+  font-size: 1.2rem;
+  background-color: $background-color;
+  color: #67917A;
+  text-align: right;
+  a {
+    color: #67917A;
+    text-decoration: none;
+    &:visited {
+      color: #67917A;
+    }
+    &:hover {
+      color: #67917A;
+      text-decoration: underline;
+    }
+  }
+}

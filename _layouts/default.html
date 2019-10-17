@@ -9,10 +9,12 @@
           gtag('config', 'UA-123757499-1');
         </script>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ site.title }} | {{site.description}}</title>
+        <meta name="description" content="{{ site.description }}">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="/assets/main.css">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="alternate" type="application/rss+xml"  href="{{ site.url }}/feed.xml" title="{{ site.title }}">
     </head>
     <body>
         <div class="site">
@@ -23,7 +25,7 @@
           {{ content }}
 
           <footer class="footer">
-            gweatherson@gmail.com / 
+            <a href="mailto:gweatherson@gmail.com">gweatherson@gmail.com</a> /
             <a href="{{ "/feed.xml" | relative_url }}">feed</a>
           </footer>
         </div>
